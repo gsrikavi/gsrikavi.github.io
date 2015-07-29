@@ -16,25 +16,18 @@
   }
   </style>
   <script>
-      /*$(function() {
+      $(function() {
           $( "#accordion" ).accordion({
-              collapsible: true
+              collapsible: true,
+              heightStyle: "content"
           });
-      });*/
+      });
   /*$(function() {
     $( "#accordion" ).accordion({
         heightStyle: "content"      
     });
   });*/
    $(function() {
-       $( "#accordion" ).accordion({
-           header: "h3",
-           collapsible: true,
-           autoHeight: false,
-           navigation: true
-       });
-   });
-  $(function() {
     $( "#accordion-resizer" ).resizable({
       minHeight: 140,
       minWidth: 200,
