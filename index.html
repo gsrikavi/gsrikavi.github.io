@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Accordion - Fill space</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #accordion-resizer {
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+  </style>
+  <script>
+      $(function() {
+          $( "#accordion" ).accordion({
+              collapsible: true
+          });
+      });
+  $(function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "fill"
+    });
+  });
+  $(function() {
+    $( "#accordion-resizer" ).resizable({
+      minHeight: 140,
+      minWidth: 200,
+      resize: function() {
+        $( "#accordion" ).accordion( "refresh" );
+      }
+    });
+  });
+  </script>
+</head>
+<body>
+    <img src="apj.jpg" alt="APJ">
+    <h2>Dr. APJ Abdul Kalam</h2>
+    <h3 class="docs">Excerpts from Wings of Fire: An Autobiography</h3>
+<!--    <h3 class="docs">Resize the outer container:</h3>-->
+ 
+<div id="accordion-resizer" class="ui-widget-content">
+  <div id="accordion">
+    <h3>Excerpt 1</h3>
+    <div>
+      <p>"Towards the end of my visit, I went to the Wallops Flight Facility at Wallops Island in East Coast, Virginia. This place was the base for NASA’s sounding rocket programme. Here, I saw a painting prominently displayed in the reception lobby. It depicted a battle scene with a few rockets flying in the background. A painting with this theme should be the most commonplace thing at a Flight Facility, but the painting caught my eye because the soldiers on the side launching the rockets were not white, but dark-skinned, with the racial features of people found in South Asia. One day, my curiosity got the better of me, drawing me towards the painting. It turned out to be Tipu Sultan’s army fighting the British. The painting depicted a fact forgotten in Tipu’s own country but commemorated here on the other side of the planet. I was happy to see an Indian glorified by NASA as a hero of warfare rocketry."</p>
+    </div>
+    <h3>Excerpt 2</h3>
+    <div>
+      <p>"What is it that distinguishes a sounding rocket from a Satellite Launch Vehicle (SLV) and from a missile? In fact, they are three different kinds of rockets. Sounding rockets are normally used for probing the near-earth environment, including the upper regions of the atmosphere. While they can carry a variety of scientific payloads to a range of altitudes, they cannot impart the final velocity needed to orbit the payload. On the other hand, a launch vehicle is designed to inject into orbit a technological payload or satellite. The final stage of a launch vehicle provides the necessary velocity for a satellite to enter an orbit. This is a complex operation requiring on-board guidance and control systems. A missile, though belonging to the same family, is a still more complex system. In addition to the large terminal velocity and onboard guidance and control, it must have the capability to home onto targets. When the targets are fast-moving and capable of manoeuvring, a missile is also required to carryout target-tracking functions."</p>
+    </div>
+    <h3>Excerpt 3</h3>
+    <div>
+      <p>"The development of Indian rockets in the twentieth century can be seen as a revival of the eighteenth century dream of Tipu Sultan. When Tipu Sultan was killed, the British captured more than 700 rockets and subsystems of 900 rockets in the battle of Turukhanahally in 1799. His army had 27 brigades, called Kushoons, and each brigade had a company of rocket men, called Jourks. These rockets had been taken to England by William Congreve and were subjected by the British to what we call ‘reverse engineering’ today. There were, of course, no GATT, IPR Act, or patent regime. With the death of Tipu, Indian rocketry also met its demise — at least for 150 years."</p>      
+    </div>
+    <h3>Excerpt 4</h3>
+    <div>
+      <p>"I often read Khalil Gibran, and always find his words full of wisdom. “Bread baked without love is a bitter bread that feeds but half a man’s hunger,”—those who cannot work with their hearts achieve but a hollow, half-hearted success that breeds bitterness all around. If you are a writer who would secretly prefer to be a lawyer or a doctor, your written words will feed but half the hunger of your readers; if you are a teacher who would rather be a businessman, your instructions will meet but half the need for knowledge of your students; if you are a scientist who hates science, your performance will satisfy but half the needs of your mission. The personal unhappiness and failure to achieve results that comes from being a round peg in a square hole is not, by any means, new. But there are exceptions to this like Prof. Oda and Sudhakar, who bring to their work a personal touch of magic based upon their individual character, personality, inner motives, and perhaps the dreams crystallized within their hearts. They become so emotionally involved with their work that any dilution of the success of their effort fills them with grief."</p>
+    </div>
+      <h3>Excerpt 5</h3>
+    <div>
+      <p>"One day, when I was working on the integration for Prof. Oda’s payload with my timer devices, he insisted on using the timers he had brought from Japan. To me they looked flimsy, but Prof. Oda stuck to his stand that the Indian timers be replaced by the Japanese ones. I yielded to his suggestion and replaced the timers. The rocket took off elegantly and attained the intended altitude. But the telemetry signal reported mission failure on account of timer malfunction. Prof. Oda was so upset that tears welled up in his eyes. I was stunned by the emotional intensity of Prof. Oda’s response. He had clearly put his heart and soul into his work."</p>
+    </div>
+      <h3>Excerpt 6</h3>
+    <div>
+      <p>"Sudhakar was my colleague in the Payload Preparation Laboratory. As part of the pre-launch schedule, we were filling and remotely pressing the hazardous sodium and thermite mix. As usual, it was a hot and humid day at Thumba. After the sixth such operation, Sudhakar and I went into the payload room to confirm the proper filling of the mix. Suddenly, a drop of sweat from his forehead fell onto the sodium, and before we knew what was happening, there was a violent explosion which shook the room. For a few paralysed seconds, I did not know what to do. The fire was spreading, and water would not extinguish the sodium fire. Trapped in this inferno, Sudhakar, however, did not lose his presence of mind. He broke the glass window with his bare hands and literally threw me out to safety before jumping out himself. I touched Sudhakar’s bleeding hands in gratitude, he was smiling through his pain. Sudhakar spent many weeks in the hospital recuperating from the severe burns he had received."</p>
+    </div>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>
